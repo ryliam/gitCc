@@ -199,6 +199,7 @@ function cancelEditTodo() {
   addButton.title = 'Add';
   addButton.appendChild(addIcon);
   updateTaskCounter();
+  alert("cancel succes");
 }
 
 function updateTodoList() {
