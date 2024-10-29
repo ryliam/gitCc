@@ -269,6 +269,7 @@ function updateTodoList() {
     button.addEventListener('click', (event) => {
       const index = event.currentTarget.getAttribute('data-index');
       deleteTodo(index);
+      alert('Warning:you are going do delete this task');
     });
   });
 
