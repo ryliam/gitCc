@@ -667,7 +667,7 @@ Animating title
 
 .sort-button:hover
 {
-   color: #161716;
+   color: #077907;
    transition: transform 1s ease;
    transform: scale(1.2);
    background-color: #e96f12;
