@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="impstyle.css" />
     <title>Importance of To-Do List</title>
+    <style>
+      .toggle-container {
+        transition: background-color 0.3s ease;
+      }
+    </style>
   </head>
   <body>
     <h1 class="heading">Importance of a To-Do List 📝</h1>
 
     <div class="contain">
-      <div class="toggle-container">
+      <div class="toggle-container" id="block1">
         <h2 class="toggle-heading">Enhanced Organization 📅</h2>
         <p class="toggle-paragraph">
           A to-do list keeps tasks organized, allowing you to view everything at
@@ -21,7 +26,7 @@
         </p>
       </div>
 
-      <div class="toggle-container">
+      <div class="toggle-container" id="block2">
         <h2 class="toggle-heading">Increased Productivity 🚀</h2>
         <p class="toggle-paragraph">
           A clear task list helps you focus on your goals, minimizing
@@ -35,7 +40,7 @@
         </p>
       </div>
 
-      <div class="toggle-container">
+      <div class="toggle-container" id="block3">
         <h2 class="toggle-heading">Reduced Stress 😌</h2>
         <p class="toggle-paragraph">
           A to-do list reduces the mental burden of remembering tasks, lowering
@@ -46,5 +51,20 @@
         </p>
       </div>
     </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const blocks = document.querySelectorAll('.toggle-container');
+        
+        blocks.forEach(block => {
+          block.addEventListener('click', () => {
+            // Remove background color from all blocks
+            blocks.forEach(b => b.style.backgroundColor = '');
+            // Set background color for the clicked block
+            block.style.backgroundColor = '#241de3'; // or any color you prefer
+          });
+        });
+      });
+    </script>
   </body>
 </html>
