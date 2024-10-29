@@ -664,3 +664,17 @@ Animating title
     width: 200px;
   }
 }
+
+.sort-button:hover
+{
+   color: #161716;
+   transition: transform 1s ease;
+   transform: scale(1.2);
+   background-color: #e96f12;
+   box-shadow: 8px 8px 10px black;
+   border-radius: 25px;
+   position: relative;
+   margin-right: 10px;
+
+}
+
