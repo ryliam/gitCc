@@ -13,30 +13,51 @@
     <div
       class="container mx-auto px-4 py-4 flex justify-between items-center"
     >
-      <div class="container mx-auto px-4 text-center text-white">
-        <h1 class="text-4xl md:text-6xl font-bold">
-          Organisez votre vie avec cette application facile à utiliser
-        </h1>
-        <p class="mt-4 text-lg md:text-2xl">
-          Manage tasks effortlessly and boost your productivity. Stay on top of
-          everything with our intuitive To-Do List.
-        </p>
-        <a
-          href="Todo.html"
-          class="mt-8 inline-block bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200"
-        >
-          Start
-        </a>
-      </div>
-    </section>
+      <a href="#" class="text-2xl font-bold text-purple-600">To-Do List</a>
+      <ul class="flex space-x-4">
+        <!-- All of these buttons currently lead to error pages as their functionality will be added in the future
+        after login and authentication has been implemented.-->
+        <li>
+          <a href="error.html?color=blue" class="hover:text-blue-600 font-bold">Upcoming Tasks</a>
+        </li>
+        <li>
+          <a href="error.html?color=orange" class="hover:text-blue-600 font-bold">Friends</a>
+        </li>
+        <li>
+          <a href="imp.html" class="hover:text-blue-600 font-bold">Why We need this?</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-      <div class="container mx-auto px-4 text-center">
-        <p>
-          &copy; 2024 Made with &#10084;by groupe2. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  </body>
+  <!-- Main Block -->
+  <section
+    class="flex justify-center items-center h-screen bg-gradient-to-b from-red-700 via-blue-500 to-pink-400"
+  >
+    <div class="container mx-auto px-4 text-center text-white">
+      <h1 class="text-4xl md:text-6xl font-bold">
+        Organise facilement votre vie
+      </h1>
+      <p class="mt-4 text-lg md:text-2xl">
+        Manage tasks effortlessly and boost your productivity. Stay on top of
+        everything with our intuitive To-Do List.
+      </p>
+      <a
+        href="Todo.html"
+        class="mt-8 inline-block bg-white text-indigo-600 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200"
+      >
+        Start
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>
+        &copy; 2024 Made with &#10084; by groupe 2. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
