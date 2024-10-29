@@ -269,6 +269,7 @@ function updateTodoList() {
     button.addEventListener('click', (event) => {
       const index = event.currentTarget.getAttribute('data-index');
       deleteTodo(index);
+      alert('Warning:you are going do delete this task');
     });
   });
 
@@ -343,6 +344,7 @@ function updateTaskCounter() {
   // Update the text of the task counter button
   if (taskCounterButton) {
     taskCounterButton.innerText = `Tasks: ${totalTasks}`;
+    console.log(`nous avons:${totalTasks} taches`);
   }
 }
 
