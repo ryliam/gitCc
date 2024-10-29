@@ -344,6 +344,7 @@ function updateTaskCounter() {
   // Update the text of the task counter button
   if (taskCounterButton) {
     taskCounterButton.innerText = `Tasks: ${totalTasks}`;
+    console.log(`nous avons:${totalTasks} taches`);
   }
 }
 
